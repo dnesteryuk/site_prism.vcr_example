@@ -1,0 +1,1 @@
+This code base presents an idea how to use SitePrism.Vcr to test applications working with remote API.
