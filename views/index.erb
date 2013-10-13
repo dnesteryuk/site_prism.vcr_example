@@ -99,8 +99,9 @@
               displayInfo(resp);
             },
             error: function(error) {
-              var res = JSON.parse(error.responseText);
-              console.info(res);
+              if (error.status == 404) {
+                $('#info').html('Error: Sorry, but the requested user is not found');
+              }
             }
           });
         });
