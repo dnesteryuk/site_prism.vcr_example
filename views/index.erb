@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>GitHub user info</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/underscore.js"></script>
+  </head>
+  <body>
+    Input nickname: <input type="text" name="nickname" id="nickname">
+    <button id="get_info">Get info</button>
+    <br>
+    <div id="info"></div>
+
+    <div class="loading-indicator" style="display: none">
+      <img src="images/loading-indicator.gif" width=16 height=16>
+      Searching info...
+    </div>
+
+    <script id="repo_template" type="text/html">
+      <tr>
+        <td>{{url}}</td>
+        <td>{{watchers}}</td>
+      </div>
+    </script>
+
+    <script id="repos_template" type="text/html">
+      <h3>Repositories:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Url</th>
+            <th>Watchers</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{rows}}
+        </tbody>
+      </table>
+    </script>
+
+    <script id="user_template" type="text/html">
+      <h3>User info:</h3>
+      <div>
+        <b>Name:</b> {{name}}
+        <b>Email:</b> {{email}}
+        <b>Location:</b> {{location}}
+      </div>
+    </script>
+
+    <script>
+      function displayInfo(resp) {
+        $('#info').html('');
+        displayUser(resp.user);
+        displayRepos(resp.repos);
+      };
+
+      function displayUser(user) {
+        var html = _.template(
+          $('#user_template').text(),
+          user
+        );
+
+        $('#info').append(html);
+      };
+
+      function displayRepos(repos) {
+        var rows        = '',
+          repoTemplate  = $('#repo_template').text(),
+          reposTemplate = $('#repos_template').text();
+
+        $.each(repos, function(index, repo) {
+          rows += _.template(repoTemplate, repo);
+        });
+
+        $('#info').append(
+          _.template(reposTemplate, {rows: rows})
+        );
+      };
+
+      function displayLoadingIndicator() {
+        $('#info').html(
+          $('.loading-indicator').clone().show()
+        );
+      };
+
+      $(document).ready(function() {
+        _.templateSettings = {
+          interpolate: /\{\{(.+?)\}\}/g
+        };
+
+        $('#get_info').click(function() {
+          displayLoadingIndicator();
+
+          $.ajax({
+            url: '/info/' + $('#nickname').val(),
+            success: function(resp) {
+              displayInfo(resp);
+            },
+            error: function(error) {
+              var res = JSON.parse(error.responseText);
+              console.info(res);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

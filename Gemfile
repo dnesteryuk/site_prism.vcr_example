@@ -1,4 +1,8 @@
+source 'http://rubygems.org'
+
 gem 'sinatra'
+gem 'github_api'
+gem 'shotgun'
 
 group :test do
   gem 'capybara'
