@@ -13,10 +13,12 @@
     <br>
     <div id="info"></div>
 
-    <div class="loading-indicator" style="display: none">
-      <img src="images/loading-indicator.gif" width=16 height=16>
-      Searching info...
-    </div>
+    <script id="loading_indicator_template" type="text/html">
+      <div id="loading_indicator">
+        <img src="images/loading-indicator.gif" width=16 height=16>
+        Searching info...
+      </div>
+    </script>
 
     <script id="repo_template" type="text/html">
       <tr>
@@ -81,7 +83,7 @@
 
       function displayLoadingIndicator() {
         $('#info').html(
-          $('.loading-indicator').clone().show()
+          $('#loading_indicator_template').text()
         );
       };
 
