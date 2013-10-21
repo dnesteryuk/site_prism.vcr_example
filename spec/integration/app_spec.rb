@@ -6,6 +6,10 @@ feature 'Application' do
     @main_page.load
   end
 
+  after do
+    SPV::Helpers.eject_all_cassettes
+  end
+
   context 'when there is a requested user' do
     before do
       @main_page.nickname_field.set 'nestd'
@@ -17,22 +21,38 @@ feature 'Application' do
       @main_page.info_container.should have_content('Zaporizhzhia, Ukraine')
     end
 
-    it 'displays repositories of an user' do
-      @main_page.info_container.should have_content('nestd/site_prism.vcr')
-      @main_page.info_container.should have_content('nestd/site_prism.vcr_example')
+    context 'when there are repositories' do
+      it 'displays repositories of an user' do
+        @main_page.info_container.should have_content('nestd/site_prism.vcr')
+        @main_page.info_container.should have_content('nestd/site_prism.vcr_example')
+      end
+    end
+
+    context 'when there are repositories' do
+      before do
+        @main_page.submit_btn.click_and_apply_vcr do
+          exchange '~/repositories', '~/no_repositories'
+        end
+      end
+
+      it 'displays a message about empty repositories' do
+        @main_page.info_container.should have_content('This user has no repositories')
+      end
     end
   end
 
   context 'when there is not a requested user' do
-    before do
-      @main_page.nickname_field.set 'rewwwwwwwww'
-      @main_page.submit_btn.click_and_apply_vcr do
-        fixtures ['~/no_user']
+    context 'when GitHub returns 404' do
+      before do
+        @main_page.nickname_field.set 'rewwwwwwwww'
+        @main_page.submit_btn.click_and_apply_vcr do
+          fixtures ['~/no_user']
+        end
       end
-    end
 
-    it 'displays a message about no user' do
-      @main_page.info_container.should have_content('Error: Sorry, but the requested user is not found')
+      it 'displays a message about no user' do
+        @main_page.info_container.should have_content('Error: Sorry, but the requested user is not found')
+      end
     end
   end
 end

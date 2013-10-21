@@ -72,13 +72,20 @@
           repoTemplate  = $('#repo_template').text(),
           reposTemplate = $('#repos_template').text();
 
-        $.each(repos, function(index, repo) {
-          rows += _.template(repoTemplate, repo);
-        });
+        if (repos.length) {
+          $.each(repos, function(index, repo) {
+            rows += _.template(repoTemplate, repo);
+          });
 
-        $('#info').append(
-          _.template(reposTemplate, {rows: rows})
-        );
+          $('#info').append(
+            _.template(reposTemplate, {rows: rows})
+          );
+        }
+        else {
+          $('#info').append(
+            _.template(reposTemplate, {rows: '<tr><td>This user has no repositories</td></tr>'})
+          );
+        }
       };
 
       function displayLoadingIndicator() {
