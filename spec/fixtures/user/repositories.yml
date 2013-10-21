@@ -2,105 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/users/nestd
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
-      Accept-Charset:
-      - utf-8
-      User-Agent:
-      - Github Ruby Gem 0.10.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        R2l0SHViLmNvbQ==
-      !binary "RGF0ZQ==":
-      - !binary |-
-        U3VuLCAyMCBPY3QgMjAxMyAxOToyMDo1NSBHTVQ=
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
-      - !binary |-
-        Y2h1bmtlZA==
-      !binary "U3RhdHVz":
-      - !binary |-
-        MjAwIE9L
-      !binary "WC1SYXRlbGltaXQtTGltaXQ=":
-      - !binary |-
-        NjA=
-      !binary "WC1SYXRlbGltaXQtUmVtYWluaW5n":
-      - !binary |-
-        NTU=
-      !binary "WC1SYXRlbGltaXQtUmVzZXQ=":
-      - !binary |-
-        MTM4MjI5OTEzNQ==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        cHVibGljLCBtYXgtYWdlPTYwLCBzLW1heGFnZT02MA==
-      !binary "TGFzdC1Nb2RpZmllZA==":
-      - !binary |-
-        U3VuLCAyMCBPY3QgMjAxMyAxODoxNzozMSBHTVQ=
-      !binary "RXRhZw==":
-      - !binary |-
-        IjFjYjI3ZTM0Yjk2YmQxYzdhMjU2MTA5NDhiZjFmYTk0Ig==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "WC1HaXRodWItTWVkaWEtVHlwZQ==":
-      - !binary |-
-        Z2l0aHViLnYzOyBmb3JtYXQ9anNvbg==
-      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
-      - !binary |-
-        bm9zbmlmZg==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        dHJ1ZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtRXhwb3NlLUhlYWRlcnM=":
-      - !binary |-
-        RVRhZywgTGluaywgWC1SYXRlTGltaXQtTGltaXQsIFgtUmF0ZUxpbWl0LVJl
-        bWFpbmluZywgWC1SYXRlTGltaXQtUmVzZXQsIFgtT0F1dGgtU2NvcGVzLCBY
-        LUFjY2VwdGVkLU9BdXRoLVNjb3Blcw==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "WC1HaXRodWItUmVxdWVzdC1JZA==":
-      - !binary |-
-        NEQ3OTVBQ0M6MUZBMzoxQ0ZGRUFFMDo1MjY0MkQxNw==
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA5VTTYvbMBT8K4tgb0ksWfFHBKUtlB572r3kEmRZsR8ry0KW
-        syRh/3ufnM02GyitwWBhz8wbjTRnYvoGLBHE6iHUZEGgJoKlJU3XCyIPMki/
-        G71BQBuCG0SSsFXjLz9Wqu+SyzIpZaqV3mR0zdZ7rpQueF4XNS1ZyVWl1df6
-        yyTwyL8/pj/xgVrbAKq3w6qB0I5VVMPvlPGaZznL11WZacr3hdoUmtdlnso8
-        o+nK2QZtXj3sol/yr+lI+LwJ6eBmbDIO2g/JNYI2dOZu038sfqD2vTH9K/Lu
-        oH+XTj4o6OeyBtvMpSPlnPSh1XgwaPsthgFDmGFjgp+T+ML4osCAx+x1/f9W
-        3glo5NWih3PitesnpbEalAcXAE92ht4tDWV630gLJzlTBmkDsqOZGcMnONL0
-        Aa/kDN4Ff06ch4NUx7h9jyWAAyY5V+uOiFLh6DRe7Wc845grBL2TdRe7updm
-        0AtiZRcBPzoIHo4Pv7DA2h/HF0RjlZy0RyLsaMyCVFjy69r0akoVmVvpeg+n
-        9tSCXDw8v3gJVsccOgmx8TgtKq9iLyblb038E4uKqBa8lpVBC+9+KuivQ9xY
-        GVC7S7Aiv952LAsRm5u7T0SJZlEnYGQy4MyU0s0SH1Y80VLQTPByi8NGV99i
-        GF8yukzpEysFKwRnW/L2GxBbDcjLBAAA
-    http_version: 
-  recorded_at: Sun, 20 Oct 2013 19:20:56 GMT
-- request:
-    method: get
     uri: https://api.github.com/users/nestd/repos
     body:
       encoding: US-ASCII
@@ -243,6 +144,6 @@ http_interactions:
         oW/obivjJ2zItlCgul2hAJM2hSJ17EmrGTVsCeUYsSNNVZu0IZR5O/tBDzDM
         dkyWLl4vFDhk01f33jFWxuu0Hc7k0atXHuHFR4NsR53iMLvRKjvIZrTpl7eM
         1eVbtqLZL4Z/GicF3ynmecJLeXteJYxJV+8Sq5/f/6hNYr//F0NUt+UQagAA
-    http_version: 
+    http_version:
   recorded_at: Sun, 20 Oct 2013 19:20:56 GMT
 recorded_with: VCR 2.6.0

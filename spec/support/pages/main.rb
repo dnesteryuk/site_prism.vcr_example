@@ -7,7 +7,7 @@ class MainPage < SitePrism::Page
   element_with_vcr \
     :submit_btn,
     '#get_info' do
-      home_path '~/'
+      home_path '/user'
 
       path '~/', ['info', 'repositories']
 
