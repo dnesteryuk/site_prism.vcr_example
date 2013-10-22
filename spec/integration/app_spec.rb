@@ -42,17 +42,15 @@ feature 'Application' do
   end
 
   context 'when there is not a requested user' do
-    context 'when GitHub returns 404' do
-      before do
-        @main_page.nickname_field.set 'rewwwwwwwww'
-        @main_page.submit_btn.click_and_apply_vcr do
-          fixtures ['~/no_user']
-        end
+    before do
+      @main_page.nickname_field.set 'rewwwwwwwww'
+      @main_page.submit_btn.click_and_apply_vcr do
+        fixtures ['~/no_user']
       end
+    end
 
-      it 'displays a message about no user' do
-        @main_page.info_container.should have_content('Error: Sorry, but the requested user is not found')
-      end
+    it 'displays a message about no user' do
+      @main_page.info_container.should have_content('Error: Sorry, but the requested user is not found')
     end
   end
 end
