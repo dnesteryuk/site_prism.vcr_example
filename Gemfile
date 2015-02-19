@@ -6,8 +6,8 @@ gem 'shotgun'
 
 group :test do
   gem 'capybara'
-  gem 'selenium-webdriver', '~> 2.35.1'
+  gem 'selenium-webdriver', '~> 2.44'
   gem 'rspec'
 
-  gem 'site_prism.vcr'
+  gem 'site_prism.vcr', github: 'dnesteryuk/site_prism.vcr'
 end

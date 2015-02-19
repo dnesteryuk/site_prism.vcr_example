@@ -4,10 +4,11 @@ class MainPage < SitePrism::Page
   element :nickname_field,    '#nickname' # input field for entering user's login
   element :loading_indicator, '#loading_indicator' # loading indicator to be shown while performing AJAX request
 
-  element_with_vcr \ # submit button sending a request to the app
+  # submit button sending a request to the app
+  element_with_vcr \
     :submit_btn,
     '#get_info' do
-      home_path '/user' # specifies home path to cassettes
+      home_path 'user' # specifies home path to cassettes
 
       path '~/', [
         'info',        # cassette to stub user's info
@@ -17,5 +18,5 @@ class MainPage < SitePrism::Page
       waiter &:wait_until_loading_indicator_invisible # waiter which keeps test execution until expectation is met
     end
 
-  element :info_container,  '#info' # container which is used for rendering user's info
+  element :info_container, '#info' # container which is used for rendering user's info
 end

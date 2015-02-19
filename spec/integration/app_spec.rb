@@ -6,25 +6,21 @@ feature 'Application' do
     @main_page.load
   end
 
-  after do
-    SPV::Helpers.eject_all_cassettes
-  end
-
   context 'when there is a requested user' do
     before do
-      @main_page.nickname_field.set 'nestd'
+      @main_page.nickname_field.set 'dnesteryuk'
       @main_page.submit_btn.click_and_apply_vcr
     end
 
     it 'displays user\' info' do
-      @main_page.info_container.should have_content('Dmitriy Nesteryuk')
-      @main_page.info_container.should have_content('Zaporizhzhia, Ukraine')
+      expect(@main_page.info_container).to have_content('Dmitriy Nesteryuk')
+      expect(@main_page.info_container).to have_content('Zaporizhzhia, Ukraine')
     end
 
     context 'when there are repositories' do
       it 'displays repositories of an user' do
-        @main_page.info_container.should have_content('nestd/site_prism.vcr')
-        @main_page.info_container.should have_content('nestd/site_prism.vcr_example')
+        expect(@main_page.info_container).to have_content('dnesteryuk/site_prism.vcr')
+        expect(@main_page.info_container).to have_content('dnesteryuk/site_prism.vcr_example')
       end
     end
 
@@ -36,7 +32,7 @@ feature 'Application' do
       end
 
       it 'displays a message about empty repositories' do
-        @main_page.info_container.should have_content('This user has no repositories')
+        expect(@main_page.info_container).to have_content('This user has no repositories')
       end
     end
   end
@@ -50,7 +46,7 @@ feature 'Application' do
     end
 
     it 'displays a message about no user' do
-      @main_page.info_container.should have_content('Error: Sorry, but the requested user is not found')
+      expect(@main_page.info_container).to have_content('Error: Sorry, but the requested user is not found')
     end
   end
 end

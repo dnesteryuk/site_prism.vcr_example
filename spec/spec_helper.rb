@@ -11,8 +11,8 @@ Capybara.default_driver = :selenium
 Capybara.app = GithubApp
 
 VCR.configure do |c|
-  c.cassette_library_dir = 'spec/fixtures'
-  c.hook_into :webmock
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :faraday
   c.ignore_localhost = true
   c.preserve_exact_body_bytes { false }
 
