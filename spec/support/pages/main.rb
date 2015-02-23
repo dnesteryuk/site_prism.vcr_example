@@ -15,7 +15,7 @@ class MainPage < SitePrism::Page
         'repositories' # cassette to stub repositories list of an user
       ]
 
-      waiter &:wait_until_loading_indicator_invisible # waiter which keeps test execution until expectation is met
+      waiter { self.wait_until_loading_indicator_invisible(20) } # waiter which keeps test execution until expectation is met
     end
 
   element :info_container, '#info' # container which is used for rendering user's info

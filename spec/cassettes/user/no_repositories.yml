@@ -1,0 +1,223 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/dnesteryuk
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.12.3
+  response:
+    status:
+      code: 200
+      message:
+    headers:
+      !binary "c2VydmVy":
+      - !binary |-
+        R2l0SHViLmNvbQ==
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        TW9uLCAyMyBGZWIgMjAxNSAyMTowNjoxNCBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "c3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "eC1yYXRlbGltaXQtbGltaXQ=":
+      - !binary |-
+        NjA=
+      !binary "eC1yYXRlbGltaXQtcmVtYWluaW5n":
+      - !binary |-
+        MzE=
+      !binary "eC1yYXRlbGltaXQtcmVzZXQ=":
+      - !binary |-
+        MTQyNDcyNzgzMg==
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        cHVibGljLCBtYXgtYWdlPTYwLCBzLW1heGFnZT02MA==
+      !binary "bGFzdC1tb2RpZmllZA==":
+      - !binary |-
+        TW9uLCAyMyBGZWIgMjAxNSAyMDozNjo0MiBHTVQ=
+      !binary "ZXRhZw==":
+      - !binary |-
+        Vy8iMmRiZjEwZjQyMzRmOWUzNjhkYjNlMTNjYzllOGI0YjEi
+      !binary "dmFyeQ==":
+      - !binary |-
+        QWNjZXB0LCBBY2NlcHQtRW5jb2Rpbmc=
+      !binary "eC1naXRodWItbWVkaWEtdHlwZQ==":
+      - !binary |-
+        Z2l0aHViLnYzOyBmb3JtYXQ9anNvbg==
+      !binary "eC14c3MtcHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "eC1mcmFtZS1vcHRpb25z":
+      - !binary |-
+        ZGVueQ==
+      !binary "Y29udGVudC1zZWN1cml0eS1wb2xpY3k=":
+      - !binary |-
+        ZGVmYXVsdC1zcmMgJ25vbmUn
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctY3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "YWNjZXNzLWNvbnRyb2wtZXhwb3NlLWhlYWRlcnM=":
+      - !binary |-
+        RVRhZywgTGluaywgWC1HaXRIdWItT1RQLCBYLVJhdGVMaW1pdC1MaW1pdCwg
+        WC1SYXRlTGltaXQtUmVtYWluaW5nLCBYLVJhdGVMaW1pdC1SZXNldCwgWC1P
+        QXV0aC1TY29wZXMsIFgtQWNjZXB0ZWQtT0F1dGgtU2NvcGVzLCBYLVBvbGwt
+        SW50ZXJ2YWw=
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "eC1naXRodWItcmVxdWVzdC1pZA==":
+      - !binary |-
+        NEQ3OTVGRTg6MTJBQToxNjZCRTkxRDo1NEVCOTY0Ng==
+      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0zMTUzNjAwMDsgaW5jbHVkZVN1YmRvbWFpbnM7IHByZWxvYWQ=
+      !binary "eC1jb250ZW50LXR5cGUtb3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "eC1zZXJ2ZWQtYnk=":
+      - !binary |-
+        OGE1YzM4MDIxYTVjZDdjZWY3YjhmNDlhMjk2ZmVlNDA=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsb2dpbiI6ImRuZXN0ZXJ5dWsiLCJpZCI6MTI4MDI0LCJhdmF0YXJfdXJs
+        IjoiaHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzEy
+        ODAyND92PTMiLCJncmF2YXRhcl9pZCI6IiIsInVybCI6Imh0dHBzOi8vYXBp
+        LmdpdGh1Yi5jb20vdXNlcnMvZG5lc3Rlcnl1ayIsImh0bWxfdXJsIjoiaHR0
+        cHM6Ly9naXRodWIuY29tL2RuZXN0ZXJ5dWsiLCJmb2xsb3dlcnNfdXJsIjoi
+        aHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy9kbmVzdGVyeXVrL2ZvbGxv
+        d2VycyIsImZvbGxvd2luZ191cmwiOiJodHRwczovL2FwaS5naXRodWIuY29t
+        L3VzZXJzL2RuZXN0ZXJ5dWsvZm9sbG93aW5ney9vdGhlcl91c2VyfSIsImdp
+        c3RzX3VybCI6Imh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vdXNlcnMvZG5lc3Rl
+        cnl1ay9naXN0c3svZ2lzdF9pZH0iLCJzdGFycmVkX3VybCI6Imh0dHBzOi8v
+        YXBpLmdpdGh1Yi5jb20vdXNlcnMvZG5lc3Rlcnl1ay9zdGFycmVkey9vd25l
+        cn17L3JlcG99Iiwic3Vic2NyaXB0aW9uc191cmwiOiJodHRwczovL2FwaS5n
+        aXRodWIuY29tL3VzZXJzL2RuZXN0ZXJ5dWsvc3Vic2NyaXB0aW9ucyIsIm9y
+        Z2FuaXphdGlvbnNfdXJsIjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vy
+        cy9kbmVzdGVyeXVrL29yZ3MiLCJyZXBvc191cmwiOiJodHRwczovL2FwaS5n
+        aXRodWIuY29tL3VzZXJzL2RuZXN0ZXJ5dWsvcmVwb3MiLCJldmVudHNfdXJs
+        IjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy9kbmVzdGVyeXVrL2V2
+        ZW50c3svcHJpdmFjeX0iLCJyZWNlaXZlZF9ldmVudHNfdXJsIjoiaHR0cHM6
+        Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy9kbmVzdGVyeXVrL3JlY2VpdmVkX2V2
+        ZW50cyIsInR5cGUiOiJVc2VyIiwic2l0ZV9hZG1pbiI6ZmFsc2UsIm5hbWUi
+        OiJEbWl0cml5IE5lc3Rlcnl1ayIsImNvbXBhbnkiOiJFY29tbWVyY2UsIExM
+        QyIsImJsb2ciOiJodHRwOi8vbmVzdGVyeXVrLmluZm8iLCJsb2NhdGlvbiI6
+        IlphcG9yaXpoemhpYSwgVWtyYWluZSIsImVtYWlsIjoiZG1pdHJpeS5uZXN0
+        ZXJ5dWtAZ21haWwuY29tIiwiaGlyZWFibGUiOmZhbHNlLCJiaW8iOm51bGws
+        InB1YmxpY19yZXBvcyI6OCwicHVibGljX2dpc3RzIjo0LCJmb2xsb3dlcnMi
+        OjEwLCJmb2xsb3dpbmciOjksImNyZWF0ZWRfYXQiOiIyMDA5LTA5LTE3VDA4
+        OjA1OjM4WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTAyLTIzVDIwOjM2OjQyWiJ9
+    http_version:
+  recorded_at: Mon, 23 Feb 2015 21:06:14 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/dnesteryuk/repos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.12.3
+  response:
+    status:
+      code: 200
+      message:
+    headers:
+      !binary "c2VydmVy":
+      - !binary |-
+        R2l0SHViLmNvbQ==
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        TW9uLCAyMyBGZWIgMjAxNSAyMTowNjoxNCBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "c3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "eC1yYXRlbGltaXQtbGltaXQ=":
+      - !binary |-
+        NjA=
+      !binary "eC1yYXRlbGltaXQtcmVtYWluaW5n":
+      - !binary |-
+        MzA=
+      !binary "eC1yYXRlbGltaXQtcmVzZXQ=":
+      - !binary |-
+        MTQyNDcyNzgzMg==
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        cHVibGljLCBtYXgtYWdlPTYwLCBzLW1heGFnZT02MA==
+      !binary "ZXRhZw==":
+      - !binary |-
+        Vy8iODVlNjNkMGRkNTIzNTc2MDdkMzVmMTI1ZDA1YWZmYmUi
+      !binary "dmFyeQ==":
+      - !binary |-
+        QWNjZXB0LCBBY2NlcHQtRW5jb2Rpbmc=
+      !binary "eC1naXRodWItbWVkaWEtdHlwZQ==":
+      - !binary |-
+        Z2l0aHViLnYzOyBmb3JtYXQ9anNvbg==
+      !binary "eC14c3MtcHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "eC1mcmFtZS1vcHRpb25z":
+      - !binary |-
+        ZGVueQ==
+      !binary "Y29udGVudC1zZWN1cml0eS1wb2xpY3k=":
+      - !binary |-
+        ZGVmYXVsdC1zcmMgJ25vbmUn
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctY3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "YWNjZXNzLWNvbnRyb2wtZXhwb3NlLWhlYWRlcnM=":
+      - !binary |-
+        RVRhZywgTGluaywgWC1HaXRIdWItT1RQLCBYLVJhdGVMaW1pdC1MaW1pdCwg
+        WC1SYXRlTGltaXQtUmVtYWluaW5nLCBYLVJhdGVMaW1pdC1SZXNldCwgWC1P
+        QXV0aC1TY29wZXMsIFgtQWNjZXB0ZWQtT0F1dGgtU2NvcGVzLCBYLVBvbGwt
+        SW50ZXJ2YWw=
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "eC1naXRodWItcmVxdWVzdC1pZA==":
+      - !binary |-
+        NEQ3OTVGRTg6MTJBRDoyNUZFODZDQjo1NEVCOTY0Ng==
+      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0zMTUzNjAwMDsgaW5jbHVkZVN1YmRvbWFpbnM7IHByZWxvYWQ=
+      !binary "eC1jb250ZW50LXR5cGUtb3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "eC1zZXJ2ZWQtYnk=":
+      - !binary |-
+        MDFkMDk2ZTZjZmUyOGY4YWVhMzUyZTk4OGMzMzJjZDM=
+    body:
+      encoding: ASCII-8BIT
+      string: '[]'
+    http_version:
+  recorded_at: Mon, 23 Feb 2015 21:06:15 GMT
+recorded_with: VCR 2.9.3

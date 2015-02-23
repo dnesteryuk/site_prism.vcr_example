@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
+gem 'faraday', '0.8.9'
 gem 'github_api'
 gem 'shotgun'
 

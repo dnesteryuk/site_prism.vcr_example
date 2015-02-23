@@ -24,7 +24,7 @@ feature 'Application' do
       end
     end
 
-    context 'when there are repositories' do
+    context 'when there are not repositories' do
       before do
         @main_page.submit_btn.click_and_apply_vcr do
           exchange '~/repositories', '~/no_repositories'
